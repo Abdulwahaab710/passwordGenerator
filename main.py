@@ -1,6 +1,6 @@
 def main():
     print "Welcome to the password generator!"
-    getLength()
+    length = getLength()
     contains = raw_input("Please Enter what should the password contains :")
     password = raw_input("Enter a word: ")
     print createPassword(password)
