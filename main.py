@@ -20,6 +20,9 @@ def createPassword(length,contains,password):
     return password
 
 def toInt(lst):
+    '''(lst)->(none)
+    toInt convert a list of strings to integers
+    '''
     for i in range(len(lst)):
         lst[i] = int(lst[i])
 
