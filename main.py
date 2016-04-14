@@ -40,6 +40,14 @@ def toInt(lst):
     for i in range(len(lst)):
         lst[i] = int(lst[i])
 
+def removeSpaces(Str):
+    Str.split(' ')
+    temp = Str
+    Str =''
+    for i in range(len(temp)):
+        Str += temp[i]
+    return Str
+
 def getLength():
     length = 0
     try:
