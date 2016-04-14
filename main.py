@@ -25,7 +25,13 @@ def createPassword(length,contains,password):
     while(len(l) != length):
         l.append(Generator(password[cnt]))
         cnt+=1
-    return l
+    return listToStr(l)
+
+def listToStr(lst):
+    Str = ''
+    for i in range(len(lst)):
+        Str += lst[i]
+    return Str
 
 def toInt(lst):
     '''(lst)->(none)
