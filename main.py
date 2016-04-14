@@ -9,15 +9,23 @@ def main():
     password = raw_input("Enter a word: ")
     print createPassword(length,contains,password)
 
+def Generator(char):
+    char = char.replace("A","4")
+    char = char.replace("a","@")
+    char = char.replace("e","3")
+    char = char.replace("","")
+    char = char.replace("","")
+    char = char.replace("","")
+    char = char.replace("","")
+    return char
+
 def createPassword(length,contains,password):
-    password = password.replace("A","4")
-    password = password.replace("a","@")
-    password = password.replace("e","3")
-    password = password.replace("","")
-    password = password.replace("","")
-    password = password.replace("","")
-    password = password.replace("","")
-    return password
+    l = []
+    cnt = 0
+    while(len(l) != length):
+        l.append(Generator(password[cnt]))
+        cnt+=1
+    return l
 
 def toInt(lst):
     '''(lst)->(none)
