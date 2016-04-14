@@ -7,6 +7,8 @@ def main():
     contains.sort()
     print contains
     password = raw_input("Enter a word: ")
+    password = removeSpaces(password)
+    print password
     print createPassword(length,contains,password)
 
 def Generator(char):
@@ -41,12 +43,7 @@ def toInt(lst):
         lst[i] = int(lst[i])
 
 def removeSpaces(Str):
-    Str.split(' ')
-    temp = Str
-    Str =''
-    for i in range(len(temp)):
-        Str += temp[i]
-    return Str
+    return Str.replace(' ','')
 
 def getLength():
     length = 0
