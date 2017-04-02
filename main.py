@@ -1,7 +1,7 @@
 def main():
     print "Welcome to the password generator!"
     length = getLength()
-    contains = raw_input("Choice from the following what should the password contains \n1)Uppercase letters\n2)Lowercase letters\n3)Numbers\n4)Symbols\nInput can be 1234>> ")
+    contains = raw_input("Choose from the following what should the password contains \n1)Uppercase letters\n2)Lowercase letters\n3)Numbers\n4)Symbols\nInput can be 1234>> ")
     contains = list(contains)
     toInt(contains)
     contains.sort()
